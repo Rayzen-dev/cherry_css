@@ -31,4 +31,43 @@ table {
 	border-spacing: 0;
 }
 
-@import "theme";
+@import "theme_var";
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
+body,html {
+	height: 100%;
+	font-family: sans-serif;
+	color: #{$black};
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+
+// Heading
+
+b,h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: (2 - (($i/8) * 2) ) * 1em;
+		margin: (20 - ($i * 2) ) * 1px 0;
+	}
+}
+
+ul {
+	padding-left: 2em;
+	margin: 1em 0;
+	list-style-type: circle;
+	li {
+		margin: 5px 0;
+	}
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 1em 10px;
+	color: #555;
+	font-family: monospace;
+}

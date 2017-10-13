@@ -15,27 +15,14 @@ html {
 
 .container {
 	max-width: $md_width * 1px;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 
 .container-fluid {
-	margin: 0;
+	margin: 10px 0;
 	width: 100%;
 }
 
-[class*="container"] {
-	& > .row {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		padding: 0 25px;
-		:after {
-			content:"";
-			display: table;
-			clear: both;
-		}
-	}
-}
 .container:after,.container-fluid:after,.row:after{
 	content:"";
 	display: table;
@@ -47,8 +34,6 @@ html {
 	max-width: 100%;
 	height: auto!important;
 }
-
-/* Responsive */
 
 @mixin create-mq($breakpoint) {
 	@if($breakpoint == 0) {
@@ -73,17 +58,43 @@ html {
 $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg_width);
 @each $modifier, $breakpoint in $map-grid-col {
 	@include create-col-classes($modifier, $nb_col, $breakpoint);
+	.col#{$modifier}-hidden {
+		display:none;
+	}
 }
 
 [class*="col-"] {
-	animation-property: width;
+	animation-property: all;
 	transition-duration: 1s;
 	float: left;
 	padding: 1em;
 	min-width: 1px;
 	@each $navigator in $navigator_prefixes {
-		#{$navigator}animation-property: width;
-		#{$navigator}animation-property: float;
+		#{$navigator}animation-property: all;
 		#{$navigator}transition-duration: 1s;
 	}
+}
+
+[class*="container"] {
+	& > .row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0 25px;
+		.align-right {
+			float: right;
+		}
+	}
+}
+
+// Font align
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
 }
