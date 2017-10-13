@@ -1,1 +1,2 @@
-# cherry_css
+# Cherry.css : The sweety animated responsive grid (with theme!)
+
