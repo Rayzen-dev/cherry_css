@@ -64,9 +64,6 @@ html {
 	@include create-mq($breakpoint) {
 		@for $i from 1 through $nb_col {
 			.col#{$modifier}-#{$i} {
-				float: left;
-				padding: 1em;
-				min-width: 1px;
 				width: (100 / ($nb_col / $i) ) * 1%;
 			}
 		}
@@ -81,9 +78,12 @@ $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg
 [class*="col-"] {
 	animation-property: width;
 	transition-duration: 1s;
+	float: left;
+	padding: 1em;
+	min-width: 1px;
 	@each $navigator in $navigator_prefixes {
 		#{$navigator}animation-property: width;
+		#{$navigator}animation-property: float;
 		#{$navigator}transition-duration: 1s;
 	}
 }
-
