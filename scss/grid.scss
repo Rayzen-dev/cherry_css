@@ -77,8 +77,7 @@ $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg
 
 [class*="container"] {
 	& > .row {
-		display: flex;
-		flex-wrap: wrap;
+		display: inline-block;
 		width: 100%;
 		padding: 0 25px;
 		.align-right {
