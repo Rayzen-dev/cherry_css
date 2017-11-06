@@ -186,6 +186,7 @@ html {
   display: inline-block;
   text-align: left;
   width: 100%;
+  margin: 10px 0;
   padding: 0 25px; }
   [class^="container"] > .row.right-xs {
     text-align: right; }
@@ -224,4 +225,4 @@ html {
 .text-justify {
   text-align: justify !important; }
 
-/*# sourceMappingURL=grid.css.map */
+/*# sourceMappingURL=cherry_grid.css.map */
