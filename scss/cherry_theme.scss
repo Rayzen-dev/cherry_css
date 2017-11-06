@@ -1,0 +1,158 @@
+// Transition for animation
+@import "theme_var";
+@mixin transition($element, $time) {
+	-webkit-transition: $element $time;
+	-moz-transition: $element $time;
+	-ms-transition: $element $time;
+	-o-transition: $element $time;
+	transition: $element $time;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400');
+
+// RESET
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body,html {
+	font-size: 100%;
+	font-weight: 200;
+	font-family: sans-serif;
+	line-height: 1.25em;
+	color: #{$black};
+	font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-size: 1.15em;
+	line-height: 1.25em;
+}
+
+// Heading
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: (2 - (($i/8) * 2) ) * 1.5em;
+		margin: (20 - ($i * 2) ) * 1px 25px;
+		line-height: 1;
+		font-weight: bold;
+	}
+}
+
+ul {
+	padding-left: 2em;
+	margin: 1em 0;
+	list-style-type: circle;
+	li {
+		margin: 5px 0;
+	}
+}
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 1em 10px;
+	color: #555;
+	font-family: monospace;
+}
+
+
+// Define color var
+$states: (default: $default_color, primary: $primary_color, success: $success_color, info: $info_color, warning: $warning_color, danger: $danger_color);
+
+@each $item, $element in $states {
+	.text-#{$item} {
+		color: $element;
+	}
+
+	.box-#{$item} {
+		color: $element;
+		border: 1px solid $element;
+		background: rgba($element, $box_alpha);
+		padding: 0.5em 1em;
+		margin: 1% 0;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		@include transition(all, .2s);
+		&:hover {
+			-webkit-box-shadow: 2px 2px 2px #b3b3b3;
+			-moz-box-shadow: 2px 2px 2px #b3b3b3;
+			box-shadow: 2px 2px 2px #b3b3b3;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			-webkit-transform: scale(1.025);
+			-moz-transform: scale(1.025);
+			-ms-transform: scale(1.025);
+			-o-transform: scale(1.025);
+			transform: scale(1.025);
+		}
+	}
+}
+
+
+// Font align
+.text-center {
+	text-align: center!important;
+}
+
+.text-left {
+	text-align: left!important;
+}
+
+.text-right {
+	text-align: right!important;
+}
+
+.text-justify {
+	text-align: justify!important;
+}
+
+// Text decoration
+b,strong {
+	font-weight: 400;
+}
+
+i,em {
+	font-style: italic;
+}
+
+mark {
+	background: rgba(63,111,124,$box_alpha);
+	padding-left: 2px;
+	padding-right: 2px;
+}
+

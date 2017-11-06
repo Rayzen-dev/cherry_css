@@ -1,12 +1,17 @@
 //Global var
-$xs_width: 576;
+$xs_width: 320;
 $sm_width: 768;
 $md_width: 992;
 $lg_width: 1200;
 $nb_col: 12;
 $navigator_prefixes: -o- -moz- -webkit-;
 
-*{box-sizing:border-box;}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body,
 html {
 	padding: 0;
@@ -63,7 +68,31 @@ $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg
 	}
 }
 
-[class*="col-"] {
+[class^="container"] {
+	& > .row {
+		display: inline-block;
+		text-align: left;
+		width: 100%;
+		margin: 10px 0;
+		padding: 0 25px;
+		&.right-xs {
+			text-align: right;
+			[class^="col-"] {
+				display: inline-table;
+				float: none;
+				text-align: left;
+			}
+		}
+		&.middle-xs {
+			text-align: center;
+			[class^="col-"] {
+				display: inline-table;
+				float: none;
+				text-align: left;
+			}
+		}
+	}
+	& [class^="col-"] {
 	animation-property: all;
 	transition-duration: 1s;
 	float: left;
@@ -74,26 +103,4 @@ $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg
 		#{$navigator}transition-duration: 1s;
 	}
 }
-
-[class*="container"] {
-	& > .row {
-		display: inline-block;
-		width: 100%;
-		padding: 0 25px;
-		.align-right {
-			float: right;
-		}
-	}
-}
-
-// Font align
-.text-center {
-	text-align: center;
-}
-
-.text-left {
-	text-align: left;
-}
-.text-right {
-	text-align: right;
 }
