@@ -93,14 +93,14 @@ $map-grid-col: ('-xs': $xs_width, '-sm': $sm_width, '-md': $md_width, '-lg': $lg
 		}
 	}
 	& [class^="col-"] {
-	animation-property: all;
-	transition-duration: 1s;
-	float: left;
-	padding: 1em;
-	min-width: 1px;
-	@each $navigator in $navigator_prefixes {
-		#{$navigator}animation-property: all;
-		#{$navigator}transition-duration: 1s;
+		animation-property: all;
+		transition-duration: 1s;
+		float: left;
+		padding: 1em;
+		min-width: 1px;
+		@each $navigator in $navigator_prefixes {
+			#{$navigator}animation-property: all;
+			#{$navigator}transition-duration: 1s;
+		}
 	}
-}
 }
