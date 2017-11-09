@@ -47,6 +47,9 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+button {
+	@include radius(0);
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -54,7 +57,7 @@ table {
 
 body,html {
 	font-size: 100%;
-	font-weight: 200;
+	font-weight: 400;
 	font-family: sans-serif;
 	line-height: 1.25em;
 	color: #{$black};
@@ -70,10 +73,14 @@ p {
 @for $i from 1 through 6 {
 	h#{$i} {
 		font-size: (2 - (($i/8) * 2) ) * 1.5em;
-		margin: (20 - ($i * 2) ) * 1px 25px;
+		margin: (20 - ($i * 2) ) * 1px 0;
 		line-height: 1;
 		font-weight: bold;
 	}
+}
+
+a {
+	text-decoration: none;
 }
 
 ul {
@@ -94,6 +101,14 @@ blockquote {
 	font-family: monospace;
 }
 
+// Basic button
+.btn {
+	border: 1px solid rgba(0,0,0,$box_alpha);
+	padding: 7px 14px;
+	color: rgba(0,0,0,$box_alpha);
+	@include radius(4px);
+	@include transition(all, .2s);
+}
 
 // Define color var
 $states: (default: $default_color, primary: $primary_color, success: $success_color, info: $info_color, warning: $warning_color, danger: $danger_color);
@@ -125,6 +140,18 @@ $states: (default: $default_color, primary: $primary_color, success: $success_co
 			-ms-transform: scale(1.025);
 			-o-transform: scale(1.025);
 			transform: scale(1.025);
+		}
+	}
+
+	.btn-#{$item} {
+		border-color: rgba($element, .75);
+		background: rgba($element, $box_alpha - .1);
+		color: rgba($element, .75);
+		@include transition(all, .2s);
+		&:hover {
+			border-color: rgba($element, 1);
+			background: rgba($element, $box_alpha * 2);
+			color: rgba($element, 1);
 		}
 	}
 }
@@ -161,5 +188,6 @@ mark {
 	padding-left: 2px;
 	padding-right: 2px;
 }
+
 
 @import "modal";
