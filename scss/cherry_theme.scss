@@ -55,27 +55,34 @@ table {
 	border-spacing: 0;
 }
 
+
+
+// Basic view
 body,html {
 	font-size: 100%;
 	font-weight: 400;
 	font-family: sans-serif;
 	line-height: 1.25em;
-	color: #{$black};
+	color: #263959;
+	background: #f4f5f9;
 	font-family: 'News Cycle', sans-serif;
 }
 
 p {
 	font-size: 1.15em;
 	line-height: 1.25em;
+	margin: 10px auto;
 }
+
 
 // Heading
 @for $i from 1 through 6 {
 	h#{$i} {
 		font-size: (2 - (($i/8) * 2) ) * 1.5em;
-		margin: (20 - ($i * 2) ) * 1px 0;
+		padding: (15 - ($i * 2) ) * 1px 0;
 		line-height: 1;
 		font-weight: bold;
+		color: #252c41;
 	}
 }
 
@@ -108,6 +115,7 @@ blockquote {
 	color: rgba(0,0,0,$box_alpha);
 	@include radius(4px);
 	@include transition(all, .2s);
+	display: inline-block;
 }
 
 // Define color var
@@ -175,7 +183,7 @@ $states: (default: $default_color, primary: $primary_color, success: $success_co
 }
 
 // Text decoration
-b,strong {
+b,strong, th {
 	font-weight: 700;
 }
 
@@ -189,5 +197,43 @@ mark {
 	padding-right: 2px;
 }
 
+// Additionnal
+code {
+	background: #8bafb7;
+	display: block;
+	padding: 1em 2em;
+	margin: 10px 0;
+}
 
+table {
+	width: 100%;
+	margin: 10px 0;
+	@include radius(20px);
+	td,th {
+		border: 1px solid #000;
+		padding: .75em 1em;
+	}
+	td {
+		text-align: left;
+	}
+}
+
+table.table-style {
+	tr:nth-child(even) {
+		background-color: #eeeeee;
+	}
+}
+
+// Inverted theme
+body.inverted {
+	background: #1e2022;
+	color: #c9d6de;
+	@for $i from 1 through 6 {
+		h#{$i} {
+			color: #f0f5f9;
+		}
+	}
+}
+
+@import "navbar";
 @import "modal";
