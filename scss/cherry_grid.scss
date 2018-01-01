@@ -20,17 +20,14 @@ html {
 }
 
 .container {
-	max-width: $md_width * 1px;
-	padding: 10px auto;
-	margin: 0 auto;
+	max-width: $lg_width * 1px;
 }
 
 .container-fluid {
-	padding: 10px 0;
 	width: 100%;
 }
-
-.container:after,.container-fluid:after,.row:after{
+[class^="container"] {margin: 1rem auto;}
+[class^="container"]:after{
 	content:"";
 	display: table;
 	clear: both;
@@ -70,15 +67,19 @@ html {
 }
 
 .row {
-	padding: 0 1em;
-	margin: 10px auto;
+	padding: .5rem 0;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	flex: 0 1 auto;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	&.middle-xs {
 		justify-content: center;
 	}
@@ -95,6 +96,9 @@ html {
 
 [class^="col-"] {
 	padding: 1em;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 }
 
 
