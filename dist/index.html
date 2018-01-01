@@ -11,74 +11,90 @@
 	<!-- SEO -->
 	<title>Cherry.css - The sweety animated responsive grid with style</title>
 </head>
-<body>
+<body class="inverted">
 	<div class="container box">
-		<h1>Cherry.css cocktail book</h1>
+		<h1>Cherry.css <small>The sweety flexible framework</small></h1>
 		<hr>
-		<h2>Heading</h2>
-		<h1>h1</h1>
-		<h2>h2</h2>
-		<h3>h3</h3>
-		<h4>h4</h4>
-		<h5>h5</h5>
-		<h6>h6</h6>
-		<h2>Bloc alignement</h2>
-		<div class="row grid-exemple left-xs">
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">Lol</div>
-			<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12 text-justify">Lol</div>
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 text-right">Lol</div>
-		</div>
-		<div class="row grid-exemple middle-xs">
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">Lol</div>
-			<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12 text-justify">Lol</div>
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 text-right">Lol</div>
-		</div>
-		<div class="row grid-exemple right-xs">
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">Lol</div>
-			<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12 text-justify">Lol.</div>
-			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12 text-right">Lol</div>
-		</div>
 
-		<h2>Text Color</h2>
-		<div class="wh-bg">
-			<p class="text-default">.text-default</p>
-			<p class="text-primary">.text-primary</p>
-			<p class="text-success">.text-success</p>
-			<p class="text-info">.text-info</p>
-			<p class="text-warning">.text-warning</p>
-			<p class="text-danger">.text-danger</p>
+		<div class="alignement">
+			<h2>Alignement</h2>
+			<h2>.middle-xs</h2>
+			<div class="row grid-exemple middle-xs">
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+			</div>
+<pre>
+	<code>
+&lt;div class="row middle-xs">
+	&lt;!-- Your content -->
+&lt;/div>
+	</code>
+</pre>
+			<h2>.right-xs</h2>
+			<div class="row right-xs grid-exemple">
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+			</div>
+<pre>
+	<code>
+&lt;div class="row right-xs">
+	&lt;!-- Your content -->
+&lt;/div>
+	</code>
+</pre>
+			<h2>.between-xs</h2>
+			<div class="row grid-exemple between-xs">
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+			</div>
+<pre>
+	<code>
+&lt;div class="row between-xs">
+	&lt;!-- Your content -->
+&lt;/div>
+	</code>
+</pre>
+			<h2>.around-xs</h2>
+			<div class="row grid-exemple around-xs">
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+					<div></div>
+				</div>
+			</div>
+<pre>
+	<code>
+&lt;div class="row around-xs">
+	&lt;!-- Your content -->
+&lt;/div>
+	</code>
+</pre>
 		</div>
-
-		<div class="wh-bg">
-			<p class="box-default">.Box-default</p>
-			<p class="box-primary">.Box-primary</p>
-			<p class="box-success">.Box-success</p>
-			<p class="box-info">.box-info</p>
-			<p class="box-warning">.box-warning</p>
-			<p class="box-danger">.box-danger</p>
-		</div>
-
-        <h2>Text decoration</h2>
-        <div class="row">
-            <p>Strong <b>&lt;b>text&lt;/b></b>.</p>
-            <p>Another strong <strong>&lt;strong> text&lt;/strong></strong>.</p>
-            <p>Italic <i>&lt;i>text&lt;/i></i></p>
-            <p>Italic <em>&lt;em>text&lt;/em></em></p>
-            <p>Marked <mark>&lt;mark>text&lt;/mark></mark></p>
-            <p>Deleted &lt;del><del>text</del>&lt;/del></p>
-			<p>Another deleted &lt;s><s>text</s>&lt;/s></p>
-            <p>Sup <sup>Text</sup></p>
-        </div>
-
-		<h2>Buttons</h2>
-		<a href="#" class="btn">.btn</a>
-		<a href="#" class="btn btn-default">.btn .btn-default</a>
-		<a href="#" class="btn btn-primary">.btn .btn-primary</a>
-		<a href="#" class="btn btn-success">.btn .btn-success</a>
-		<a href="#" class="btn btn-info">.btn .btn-info</a>
-		<a href="#" class="btn btn-warning">.btn .btn-warning</a>
-		<a href="#" class="btn btn-danger">.btn .btn-danger</a>
-		<button class="">Click the button!</button>
 	</div>
 </body>
 </html>

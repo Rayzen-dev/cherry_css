@@ -34,53 +34,61 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body, html {
+body {
   font-size: 100%;
   font-weight: 400;
   font-family: sans-serif;
   line-height: 1.25em;
-  color: #000;
+  color: #263959;
+  background: #f4f5f9;
   font-family: 'News Cycle', sans-serif; }
 
 p {
   font-size: 1.15em;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  margin: 25px auto; }
 
 h1 {
   font-size: 2.625em;
-  margin: 18px 0;
+  padding: 13px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 h2 {
   font-size: 2.25em;
-  margin: 16px 0;
+  padding: 11px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 h3 {
   font-size: 1.875em;
-  margin: 14px 0;
+  padding: 9px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 h4 {
   font-size: 1.5em;
-  margin: 12px 0;
+  padding: 7px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 h5 {
   font-size: 1.125em;
-  margin: 10px 0;
+  padding: 5px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 h6 {
   font-size: 0.75em;
-  margin: 8px 0;
+  padding: 3px 0;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #252c41; }
 
 a {
   text-decoration: none; }
@@ -111,7 +119,8 @@ blockquote {
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  display: inline-block; }
 
 .text-default {
   color: #848484; }
@@ -389,7 +398,7 @@ blockquote {
 .text-justify {
   text-align: justify !important; }
 
-b, strong {
+b, strong, th {
   font-weight: 700; }
 
 i, em {
@@ -399,6 +408,43 @@ mark {
   background: rgba(63, 111, 124, 0.25);
   padding-left: 2px;
   padding-right: 2px; }
+
+code {
+  background: #8bafb7;
+  display: block;
+  padding: 1em 2em;
+  margin: 10px 0; }
+
+table {
+  width: 100%;
+  margin: 10px 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+  table td, table th {
+    border: 1px solid #000;
+    padding: .75em 1em; }
+  table td {
+    text-align: left; }
+
+table.table-style tr:nth-child(even) {
+  background-color: #eeeeee; }
+
+body.inverted {
+  background: #1e2022;
+  color: #c9d6de; }
+  body.inverted h1 {
+    color: #f0f5f9; }
+  body.inverted h2 {
+    color: #f0f5f9; }
+  body.inverted h3 {
+    color: #f0f5f9; }
+  body.inverted h4 {
+    color: #f0f5f9; }
+  body.inverted h5 {
+    color: #f0f5f9; }
+  body.inverted h6 {
+    color: #f0f5f9; }
 
 .modal-overlay {
   position: fixed;
@@ -422,7 +468,7 @@ mark {
   left: 50%;
   opacity: 0;
   width: 90%;
-  padding: 24px 20px;
+  padding: 30px 20px;
   -webkit-transition: .1s opacity ease;
   -moz-transition: .1s opacity ease;
   -ms-transition: .1s opacity ease;
@@ -456,9 +502,7 @@ mark {
   position: absolute;
   top: 0;
   right: 0;
-  padding: .1em .2em;
-  font-size: 2em;
-  line-height: 1;
+  font-size: 1.5em;
   cursor: pointer;
   color: #fff;
   border: 0;

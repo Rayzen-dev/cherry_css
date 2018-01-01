@@ -4,12 +4,11 @@
     <!-- Styles.css -->
     <link rel="stylesheet" type="text/css" href="css/cherry_grid.css">
     <link rel="stylesheet" type="text/css" href="css/cherry_theme.css">
-    <link rel="stylesheet" type="text/css" href="css/exemple.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta charset="utf-8">
 
     <!-- SEO -->
-    <title>Components - Cherry.css</title>
+    <title>Cherry.js - Do it sweety</title>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -17,14 +16,54 @@
 </head>
 <body>
     <div class="container">
-        <h1>Components</h1>
+        <div class="row">
+        <h1>Cherry.js, do it sweety!</h1>
+        <p>For the cocktail, we created some JavaScript functions to get the best of your webstite.</p>
+        <a href="javascript:void(0)" class="btn btn-success call-modal" modal-target="modalExemple" modral-dismiss>Show modal</a>
+        <p>Basic usage (also with button markup):</p>
+        <code code-type="html">
+            &lt;!-- Modal call: you can add your custom class to the modal call and the features in the table --><br>
+            &lt;a href="javascript:void(0)" class="call-modal" modal-target="<em>myModal</em>">Show modal&lt;/a><br><br>
 
-        <a href="javascript:void(0)" class="btn btn-success call-modal" modal-target="myModal" modal-dismiss="true">Show modal</a>
+            &lt;!-- The modal content --><br>
+            &lt;div class="content-modal" id="<em>myModal</em>"><br>
+            &emsp;...<br>
+            &lt;/div>
+        </code>
+        <table class="table-style">
+            <tr>
+                <th>Attribute</th>
+                <th>Required</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>class="call-modal ..."</td>
+                <td class="text-danger">required</td>
+                <td>Class name to call the modal event, possibility to overload the after with your own classes.</td>
+            </tr>
+            <tr>
+                <td>modal-target="yourModalName"</td>
+                <td class="text-danger">required</td>
+                <td>Target the content of your modal with the same <b>id</b> of your modal.</td>
+            </tr>
+            <tr>
+                <td>modal-dismiss</td>
+                <td class="text-primary">optionnal</td>
+                <td>Attribute with no value. This attribute add the close button on the top-right of the modal.</td>
+            </tr>
+        </table>
 
-        <div class="content-modal" id="myModal">
-            <p>Hello World!</p>
+
+
+            <div class="content-modal" id="modalExemple">
+                <p>Hello! It's SuperModal!</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
         </div>
-
     </div>
 </body>
 </html>
