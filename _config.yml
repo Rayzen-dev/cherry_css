@@ -1,3 +1,8 @@
 theme: jekyll-theme-cayman
 name: Cherry.css
 description: A little CSS framework
+avatar: https://yoandelmaire.fr/public/apple-icon-180x180.png
+
+footer-links:
+  email: ydelmaire@hotmail.com
+  github: Rayzen-dev/cherry_css
