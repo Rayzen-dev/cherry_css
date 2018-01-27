@@ -8,6 +8,14 @@
 	transition: $element $time;
 }
 
+@mixin shadow_in($x_axis, $y_axis, $color) {
+	-webkit-box-shadow: $x_axis $y_axis $color inset;
+	-moz-box-shadow: $x_axis $y_axis $color inset;
+	-ms-box-shadow: $x_axis $y_axis $color inset;
+	-o-box-shadow: $x_axis $y_axis $color inset;
+	box-shadow: $x_axis $y_axis $color inset;
+}
+
 @mixin radius($border) {
 	-webkit-border-radius: $border;
 	-moz-border-radius: $border;
@@ -58,7 +66,8 @@ table {
 
 
 // Basic view
-body,html {
+
+body {
 	font-size: 100%;
 	font-weight: 400;
 	font-family: sans-serif;
@@ -66,12 +75,15 @@ body,html {
 	color: #263959;
 	background: #f4f5f9;
 	font-family: 'News Cycle', sans-serif;
+	@include transition(all, .2s);
 }
 
 p {
-	font-size: 1.15em;
-	line-height: 1.25em;
-	margin: 10px auto;
+	line-height: 1.25;
+	margin: 15px auto;
+	display: inline-block;
+	width: 100%;
+	text-align: justify;
 }
 
 
@@ -83,6 +95,8 @@ p {
 		line-height: 1;
 		font-weight: bold;
 		color: #252c41;
+		width: 100%;
+		@include transition(all, .2s);
 	}
 }
 
@@ -110,26 +124,151 @@ blockquote {
 
 // Basic button
 .btn {
-	border: 1px solid rgba(0,0,0,$box_alpha);
+	border: 2px solid $dark_gray;
+	background: transparent;
+	margin: .25rem .5rem;
 	padding: 7px 14px;
-	color: rgba(0,0,0,$box_alpha);
-	@include radius(4px);
+	color: $dark_gray;
 	@include transition(all, .2s);
+	@include radius(4px);
 	display: inline-block;
+	&.full {
+		width: 100%;
+		text-align: center;
+	}
 }
 
+// Basic panel
+.panel {
+	border: 1px solid #106BFF;
+	background: $gray;
+	margin: 1rem auto;
+	@include transition(all, .2s);
+}
+
+.panel-header {
+	padding: .75rem 1.25rem;
+	border-bottom: .1rem solid #106BFF;
+	@include transition(all, .2s);
+}
+
+.panel-body {
+	padding: 1.25rem;
+}
+
+button {
+	font-family: 'News Cycle', sans-serif;
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: 0!important;;
+	}
+}
+
+
+
+
+
+// Font align
+.text-center {
+	text-align: center!important;
+}
+
+.text-left {
+	text-align: left!important;
+}
+
+.text-right {
+	text-align: right!important;
+}
+
+.text-justify {
+	text-align: justify!important;
+}
+
+// Text decoration
+b,strong, thead {
+	font-weight: 700;
+}
+
+i,em {
+	font-style: italic;
+}
+
+mark {
+	background: rgba(63,111,124,$box_alpha);
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+// Additionnal
+pre {
+	margin: .5rem 0;
+	display: inline-block;
+	width: 100%;
+	font-family: monospace;
+}
+code {
+	overflow-x: scroll;
+	word-wrap: break-word;
+	background: #8bafb7;
+	display: block;
+	padding: 1em 2em;
+	margin: 10px 0;
+}
+
+
+// Table
+.table-responsive {
+	overflow-x:auto;	
+}
+
+table {
+	width: 100%;
+	margin: 10px 0;
+	tr {
+		overflow: hidden;
+	}
+	td,th {
+		overflow: hidden;
+		vertical-align: middle;
+		border: 0;
+		border-bottom: 1px solid #8B8B8B;
+		padding: .75em 1em;
+	}
+	&.table-style {
+		tr:nth-child(even) {
+			background-color: #E9E9E9;
+		}
+	}
+}
+
+// End table
+// ---------------------------------
+
+
+@import "navbar";
+
 // Define color var
-$states: (default: $default_color, primary: $primary_color, success: $success_color, info: $info_color, warning: $warning_color, danger: $danger_color);
+$states: (
+	default: ("regular":$default_color, "light":$default_light_color),
+	primary: ("regular":$primary_color, "light":$primary_light_color),
+	success: ("regular":$success_color, "light":$success_light_color),
+	info: ("regular":$info_color, "light":$info_light_color),
+	warning: ("regular":$warning_color, "light":$warning_light_color),
+	danger: ("regular":$danger_color, "light":$danger_light_color)
+);
 
 @each $item, $element in $states {
 	.text-#{$item} {
-		color: $element;
+		color: map-get($element, "regular");
 	}
 
 	.box-#{$item} {
-		color: $element;
-		border: 1px solid $element;
-		background: rgba($element, $box_alpha);
+		color: map-get($element, "regular");
+		border: 1px solid map-get($element, "regular");
+		background: rgba(map-get($element, "regular"), $box_alpha);
 		padding: 0.5em 1em;
 		margin: 1% 0;
 		-webkit-border-radius: 4px;
@@ -152,88 +291,52 @@ $states: (default: $default_color, primary: $primary_color, success: $success_co
 	}
 
 	.btn-#{$item} {
-		border-color: rgba($element, .75);
-		background: rgba($element, $box_alpha - .1);
-		color: rgba($element, .75);
-		@include transition(all, .2s);
-		&:hover {
-			border-color: rgba($element, 1);
-			background: rgba($element, $box_alpha * 2);
-			color: rgba($element, 1);
+		border-color: map-get($element, "regular");
+		color: map-get($element, "regular");
+		&:hover,
+		&.active {
+			background: map-get($element, "light");
+		}
+	}
+
+	.panel.panel-#{$item} {
+		border-color: map-get($element, "regular");
+		color: map-get($element, "regular");
+		background: map-get($element, "light")!important;
+		.panel-header {
+			border-color: map-get($element, "regular");
 		}
 	}
 }
-
-
-// Font align
-.text-center {
-	text-align: center!important;
-}
-
-.text-left {
-	text-align: left!important;
-}
-
-.text-right {
-	text-align: right!important;
-}
-
-.text-justify {
-	text-align: justify!important;
-}
-
-// Text decoration
-b,strong, th {
-	font-weight: 700;
-}
-
-i,em {
-	font-style: italic;
-}
-
-mark {
-	background: rgba(63,111,124,$box_alpha);
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
-// Additionnal
-code {
-	background: #8bafb7;
-	display: block;
-	padding: 1em 2em;
-	margin: 10px 0;
-}
-
-table {
-	width: 100%;
-	margin: 10px 0;
-	@include radius(20px);
-	td,th {
-		border: 1px solid #000;
-		padding: .75em 1em;
-	}
-	td {
-		text-align: left;
-	}
-}
-
-table.table-style {
-	tr:nth-child(even) {
-		background-color: #eeeeee;
-	}
-}
+@import "modal";
 
 // Inverted theme
-body.inverted {
+body.inverted  {
 	background: #1e2022;
 	color: #c9d6de;
+	
 	@for $i from 1 through 6 {
 		h#{$i} {
 			color: #f0f5f9;
 		}
 	}
-}
 
-@import "navbar";
-@import "modal";
+	.panel {
+		background: $inverted_gray;
+	}
+
+	code {
+		background: #617A80;
+	}
+
+	table {
+		td,th {
+			border-color: #6E6E6E;
+		}
+		&.table-style {
+			tr:nth-child(even) {
+				background-color: #272727;
+			}
+		}
+	}
+}

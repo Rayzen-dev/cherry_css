@@ -5,96 +5,238 @@
 	<link rel="stylesheet" type="text/css" href="css/cherry_grid.css">
 	<link rel="stylesheet" type="text/css" href="css/cherry_theme.css">
 	<link rel="stylesheet" type="text/css" href="css/exemple.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta charset="utf-8">
+	<style type="text/css">
+		.night {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			background: #7B7686;
+			color: #f9f9f9;
+			font-weight: bold;
+			padding: 1em;
+			cursor: pointer;
+		}
+	</style>
 
 	<!-- SEO -->
-	<title>Cherry.css - The sweety animated responsive grid with style</title>
+	<title>Cherry.css - The sweet animated responsive grid with style</title>
 </head>
-<body class="inverted">
-	<div class="container box">
-		<h1>Cherry.css <small>The sweety flexible framework</small></h1>
+<body>
+	<a href="https://github.com/Rayzen-dev/cherry_css"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<span class="night">Change theme</span>
+	<div class="container">
+		<h1>Cherry.css <small>The sweet flexible framework</small></h1>
 		<hr>
 
 		<div class="alignement">
 			<h2>Alignement</h2>
-			<h2>.middle-xs</h2>
+			<h3>.middle-xs</h3>
 			<div class="row grid-exemple middle-xs">
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-2">
 					<div></div>
 				</div>
-				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-4">
 					<div></div>
 				</div>
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-2">
 					<div></div>
 				</div>
 			</div>
-<pre>
-	<code>
-&lt;div class="row middle-xs">
+			<pre><code>&lt;div class="row middle-xs">
 	&lt;!-- Your content -->
-&lt;/div>
-	</code>
-</pre>
-			<h2>.right-xs</h2>
+&lt;/div></code></pre>
+			<h3>.right-xs</h3>
 			<div class="row right-xs grid-exemple">
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-2">
 					<div></div>
 				</div>
-				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-4">
 					<div></div>
 				</div>
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-2">
 					<div></div>
 				</div>
 			</div>
-<pre>
-	<code>
-&lt;div class="row right-xs">
+		<pre><code>&lt;div class="row right-xs">
 	&lt;!-- Your content -->
-&lt;/div>
-	</code>
-</pre>
-			<h2>.between-xs</h2>
+&lt;/div></code></pre>
+			<h3>.between-xs</h3>
 			<div class="row grid-exemple between-xs">
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
-				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
 			</div>
-<pre>
-	<code>
-&lt;div class="row between-xs">
+			<pre><code>&lt;div class="row between-xs">
 	&lt;!-- Your content -->
-&lt;/div>
-	</code>
-</pre>
-			<h2>.around-xs</h2>
+&lt;/div></code></pre>
+			<h3>.around-xs</h3>
 			<div class="row grid-exemple around-xs">
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
-				<div class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
-				<div class="col-lg-1 col-md-2 col-sm-3 col-xs-12">
+				<div class="col-xs-3">
 					<div></div>
 				</div>
 			</div>
-<pre>
-	<code>
-&lt;div class="row around-xs">
+		<pre><code>&lt;div class="row around-xs">
 	&lt;!-- Your content -->
-&lt;/div>
-	</code>
-</pre>
+&lt;/div></code></pre>
+		</div> <!-- /alignement -->
+
+		<div class="row">
+			<h2>Panel</h2>
+			<div class="col-xs-12">
+				<div class="panel">
+					<div class="panel-header">
+						Panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel">
+	&lt;div class="panel-header">
+		...
+	&lt;/div>
+	&lt;div class="panel-body">
+		...
+	&lt;/div>
+&lt;/div></code></pre>
+			</div>
+			<h3>State panel</h3>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-header">
+						Default panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-default">
+	...
+&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-header">
+						Primary panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-primary">
+	...
+&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-success">
+					<div class="panel-header">
+						Success panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-success">
+	...
+&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-info">
+					<div class="panel-header">
+						Info Panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-info">
+	...
+&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-warning">
+					<div class="panel-header">
+						Warning panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-warning">
+	...
+&lt;/div></code></pre>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<div class="panel panel-danger">
+					<div class="panel-header">
+						Danger panel
+					</div>
+					<div class="panel-body">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+				<pre><code>&lt;div class="panel panel-danger">
+	...
+&lt;/div></code></pre>
+			</div>
+		</div> <!-- /panel -->
+
+		
+		<h2>Button</h2>
+		<h3>Basic button</h3>
+		<div class="row">
+			<a href="#" class="btn">btn</a>
+			<pre><code>&lt;a href="#" class="btn">&lt;/a></code></pre>
 		</div>
-	</div>
+		<h3>State button</h3>
+		<div class="row">
+			<a href="#" class="btn btn-default">btn-default</a>
+			<a href="#" class="btn btn-primary">btn-primary</a>
+			<a href="#" class="btn btn-success">btn-success</a>
+			<a href="#" class="btn btn-info">btn-info</a>
+			<a href="#" class="btn btn-warning">btn-warning</a>
+			<a href="#" class="btn btn-danger">btn-danger</a>
+			<pre><code>&lt;a href="#" class="btn <b>btn-default</b>"> btn-default &lt;/a>
+&lt;a href="#" class="btn <b>btn-primary</b>"> btn-primary &lt;/a>
+&lt;a href="#" class="btn <b>btn-success</b>"> btn-success &lt;/a>
+&lt;a href="#" class="btn <b>btn-info</b>"> btn-info &lt;/a>
+&lt;a href="#" class="btn <b>btn-warning</b>"> btn-warning &lt;/a>
+&lt;a href="#" class="btn <b>btn-danger</b>"> btn-danger &lt;/a>
+</code></pre>
+		</div>
+
+		<h3>Active state button</h3>
+		<div class="row">
+			<a href="#" class="btn btn-default active">active default button</a>
+			<pre><code>&lt;a href="#" class="btn btn-default <b>active</b>">&lt;/a></code></pre>
+		</div>
+
+		<h3>Full witdth button</h3>
+		<div class="row">
+			<a href="#" class="btn btn-default full">full width default button</a>
+			<pre><code>&lt;a href="#" class="btn btn-default <b>full</b>"> full width button &lt;/a></code></pre>
+		</div>
+		
+	</div> <!-- /container -->
+
+	<script type="text/javascript">
+		document.getElementsByClassName('night')[0].addEventListener('click', function() {
+			document.getElementsByTagName('body')[0].classList.toggle("inverted");
+		})
+	</script>
 </body>
 </html>

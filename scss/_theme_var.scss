@@ -1,10 +1,29 @@
+//Global var
+$xs_width: 280;
+$sm_width: 600;
+$md_width: 768;
+$lg_width: 1024;
+$nb_col: 12;
+$navigator_prefixes: -webkit- -moz- -ms- -o-;
+
 // Change the color here
 $black: #000;
+$gray: #d3d3d3;
+$dark_gray : #848484;
+$inverted_gray: rgb(51,51,51);
+
+// State color
 $default_color: rgb(132,132,132);
+$default_light_color: rgb(205,205,205);
 $primary_color: rgb(139,175,183);
+$primary_light_color: rgb(208,223,226);
 $success_color: rgb(48,155,69);
-$info_color: rgb(206,181,232);
+$success_light_color: rgb(172,215,180);
+$info_color: rgb(108,73,184);
+$info_light_color: rgb(196,182,226);
 $warning_color: rgb(255,150,0);
+$warning_light_color: rgb(255,213,153);
 $danger_color: rgb(227,69,0);
+$danger_light_color: rgb(243,180,153);
 
 $box_alpha: 0.25;

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22305510-4a43-4489-b9e6-0cc95eb86840" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/cherry_grid.scss" afterPath="$PROJECT_DIR$/scss/cherry_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/cherry.js" afterPath="$PROJECT_DIR$/js/cherry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/cherry_theme.scss" afterPath="$PROJECT_DIR$/scss/cherry_theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/exemple.scss" afterPath="$PROJECT_DIR$/scss/exemple.scss" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../portfolio_deployement/public/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7308">
+              <caret line="609" column="9" lean-forward="false" selection-start-line="609" selection-start-column="9" selection-end-line="609" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../portfolio_deployement/resources/views/about.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>10px 2px 2px 2px</find>
+      <find>Mail::</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="/opt/lampp/htdocs/www/test_portfolio/public/css/cherry_theme.css" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Comment.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Http/Requests/CommentBlog.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/composer.json" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Http/Controllers/GuestController.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/blogShow.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/public/css/main.css" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/layouts/app.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/admin/index.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/admin/picture/index.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/admin/picture/create.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Http/Controllers/Admin/PicturesController.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Mail/EmailVerification.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Jobs/SendVerificationEmail.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/User.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/auth/verification.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/welcome.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/.env" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/auth/emailconfirm.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/lang/fr/validation.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/lang/fr/auth.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/auth/email.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/resources/views/contact.blade.php" />
+        <option value="/opt/lampp/htdocs/www/test_portfolio/routes/web.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/routes/web.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/app/Mail/Contact.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/contact.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/mail.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/app/Http/Controllers/GuestController.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/error/500.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/app/Exceptions/Handler.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/.env" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/public/js/trianglify.js" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/error/404.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/public/css/navbar.css" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/auth/passwords/email.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/auth/passwords/reset.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/vendor/notifications/email.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/app/User.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/vendor/laravel/framework/src/Illuminate/Auth/Notifications/ResetPassword.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/app/Notifications/ResetPasswordToken.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/auth/passwords/mail.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/public/css/main.css" />
+        <option value="$PROJECT_DIR$/../portfolio_deployement/resources/views/about.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../portfolio_deployement/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="680" />
+    <option name="y" value="15" />
+    <option name="width" value="678" />
+    <option name="height" value="753" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cherry_css" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio_deployement" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cherry_css" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio_deployement" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cherry_css" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio_deployement" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cherry_css" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio_deployement" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="cherry_css" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio_deployement" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfolio_deployement" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="/opt/lampp/htdocs/www/test_portfolio/resources/views/admin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22305510-4a43-4489-b9e6-0cc95eb86840" name="Default" comment="" />
+      <created>1509812380539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509812380539</updated>
+      <workItem from="1509812383033" duration="3277000" />
+      <workItem from="1509831966580" duration="2259000" />
+      <workItem from="1509879976547" duration="10764000" />
+      <workItem from="1509911509633" duration="218000" />
+      <workItem from="1509955824710" duration="2154000" />
+      <workItem from="1509996352003" duration="2138000" />
+      <workItem from="1510044093057" duration="17434000" />
+      <workItem from="1510128804494" duration="16037000" />
+      <workItem from="1510296819380" duration="18977000" />
+      <workItem from="1510407272006" duration="5215000" />
+      <workItem from="1510502200986" duration="2809000" />
+      <workItem from="1510561808341" duration="3526000" />
+      <workItem from="1510576183151" duration="1870000" />
+      <workItem from="1510580525944" duration="2652000" />
+      <workItem from="1510593455132" duration="3411000" />
+      <workItem from="1510680081109" duration="1266000" />
+      <workItem from="1510737759178" duration="14780000" />
+      <workItem from="1510906056173" duration="5273000" />
+      <workItem from="1510916665548" duration="20000" />
+      <workItem from="1510921605302" duration="22829000" />
+      <workItem from="1510993768098" duration="5592000" />
+      <workItem from="1511007935965" duration="11778000" />
+      <workItem from="1511089464609" duration="2943000" />
+      <workItem from="1511093957783" duration="3276000" />
+      <workItem from="1511103951804" duration="605000" />
+      <workItem from="1511115398018" duration="3007000" />
+      <workItem from="1511166402588" duration="17236000" />
+      <workItem from="1511341541620" duration="1091000" />
+      <workItem from="1511357176032" duration="1454000" />
+      <workItem from="1511516052523" duration="1377000" />
+      <workItem from="1511525639809" duration="12514000" />
+      <workItem from="1511618044155" duration="750000" />
+      <workItem from="1511628023892" duration="6277000" />
+      <workItem from="1511641501810" duration="7271000" />
+      <workItem from="1511691036982" duration="2916000" />
+      <workItem from="1511713922432" duration="1808000" />
+      <workItem from="1511769473571" duration="14797000" />
+      <workItem from="1511793747794" duration="9997000" />
+      <workItem from="1511811639386" duration="898000" />
+      <workItem from="1511852176465" duration="2997000" />
+      <workItem from="1511942994729" duration="15500000" />
+      <workItem from="1512044985127" duration="652000" />
+      <workItem from="1512045700008" duration="6324000" />
+      <workItem from="1512070544910" duration="1017000" />
+      <workItem from="1512543442111" duration="840000" />
+      <workItem from="1512544297320" duration="241000" />
+      <workItem from="1512549865940" duration="2417000" />
+      <workItem from="1512553823572" duration="150000" />
+      <workItem from="1512553994726" duration="9440000" />
+      <workItem from="1512630880206" duration="5110000" />
+      <workItem from="1512656685262" duration="1655000" />
+      <workItem from="1512669881000" duration="738000" />
+      <workItem from="1512724984909" duration="943000" />
+      <workItem from="1512727018634" duration="1091000" />
+      <workItem from="1512729528371" duration="8124000" />
+      <workItem from="1512742677456" duration="2235000" />
+      <workItem from="1512764349174" duration="1523000" />
+      <workItem from="1512813188114" duration="9000" />
+      <workItem from="1512974694654" duration="156000" />
+      <workItem from="1512983496628" duration="7463000" />
+      <workItem from="1513002537950" duration="1765000" />
+      <workItem from="1513019387232" duration="56000" />
+      <workItem from="1513144778581" duration="1924000" />
+      <workItem from="1513152361484" duration="3442000" />
+      <workItem from="1513156036115" duration="3549000" />
+      <workItem from="1513160760988" duration="7605000" />
+      <workItem from="1513193407834" duration="1838000" />
+      <workItem from="1513231276285" duration="2840000" />
+      <workItem from="1513241710227" duration="197000" />
+      <workItem from="1513241922141" duration="7414000" />
+      <workItem from="1513256653526" duration="1753000" />
+      <workItem from="1513258491428" duration="7190000" />
+      <workItem from="1513328397758" duration="3410000" />
+      <workItem from="1513334094249" duration="182000" />
+      <workItem from="1513340786273" duration="10600000" />
+      <workItem from="1513511536953" duration="5166000" />
+      <workItem from="1513584102069" duration="377000" />
+      <workItem from="1513584542030" duration="2956000" />
+      <workItem from="1513588111950" duration="4825000" />
+      <workItem from="1513596502373" duration="1225000" />
+      <workItem from="1513621410094" duration="1236000" />
+      <workItem from="1513771076331" duration="159000" />
+      <workItem from="1513772694522" duration="183000" />
+      <workItem from="1513847013513" duration="1857000" />
+      <workItem from="1513849518333" duration="3360000" />
+      <workItem from="1513856118472" duration="2072000" />
+      <workItem from="1513858466556" duration="34000" />
+      <workItem from="1513936660845" duration="20000" />
+      <workItem from="1514031453312" duration="1498000" />
+      <workItem from="1514411157226" duration="251000" />
+      <workItem from="1514448106571" duration="5804000" />
+      <workItem from="1514455181273" duration="6611000" />
+      <workItem from="1514479823216" duration="10257000" />
+      <workItem from="1514567753845" duration="11672000" />
+      <workItem from="1514582419513" duration="2464000" />
+      <workItem from="1514631446767" duration="7583000" />
+      <workItem from="1514653846090" duration="1729000" />
+      <workItem from="1514659535404" duration="5833000" />
+      <workItem from="1514883008392" duration="1200000" />
+      <workItem from="1514968679677" duration="3391000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="446649000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-3" width="1366" height="771" extended-state="7" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27013177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file:///opt/lampp/htdocs/www/test_portfolio/app/Http/Controllers/Auth/RegisterController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+</project>

@@ -1,10 +1,4 @@
-//Global var
-$xs_width: 280;
-$sm_width: 600;
-$md_width: 768;
-$lg_width: 1024;
-$nb_col: 12;
-$navigator_prefixes: -webkit- -moz- -ms- -o-;
+@import "theme_var";
 
 * {
 	@each $navigator in $navigator_prefixes {
@@ -26,7 +20,7 @@ html {
 .container-fluid {
 	width: 100%;
 }
-[class^="container"] {margin: 1rem auto;}
+[class^="container"] {margin: 1rem auto;padding:0 1rem}
 [class^="container"]:after{
 	content:"";
 	display: table;
@@ -67,7 +61,7 @@ html {
 }
 
 .row {
-	padding: .5rem 0;
+	margin: .75rem 0;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;

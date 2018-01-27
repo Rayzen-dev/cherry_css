@@ -17,7 +17,8 @@ html {
   width: 100%; }
 
 [class^="container"] {
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  padding: 0 1rem; }
 
 [class^="container"]:after {
   content: "";

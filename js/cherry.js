@@ -1,18 +1,28 @@
-    (function () {
-        this.Modal = function () {
-            this.closeButton = null;
-            this.modal = null;
-            this.overlay = null;
+/*
+*   Cherry Modal
+*   Custom params:
+*   - autoOpen (true|false)
+*   - closeButton (true|false)
+*   - content (string)
+*   - overlay (true|false)
+*/
 
-            this.transitionEnd = transitionSelect();
 
-            var defaults = {
-                autoOpen: false,
-                className: 'modal-fade',
-                closeButton: true,
-                content: "",
-                maxWidth: 500,
-                minWidth: 280,
+(function () {
+    this.Modal = function () {
+        this.closeButton = null;
+        this.modal = null;
+        this.overlay = null;
+
+        this.transitionEnd = transitionSelect();
+
+        var defaults = {
+            autoOpen: false,
+            className: 'modal-fade',
+            closeButton: true,
+            content: "",
+                /*maxWidth: 500,
+                minWidth: 280,*/
                 overlay: true,
             };
 
@@ -23,29 +33,26 @@
             if(this.options.autoOpen) this.open();
         } // End Modal
 
-        Modal.prototype.close = function () {
+        Modal.prototype.close = function() {
             var _ = this;
             this.modal.className = this.modal.className.replace(" modal-open", "");
-            this.overlay.className = this.overlay.className.replace(" modal-open", "");
+            this.overlay.className = this.overlay.className.replace(" modal-open",
+                "");
             this.modal.addEventListener(this.transitionEnd, function() {
-                _.modal.parentNode.removeChild(_.modal);
+                if (_.modal.parentNode) _.modal.parentNode.removeChild(_.modal);
             });
             this.overlay.addEventListener(this.transitionEnd, function() {
                 if(_.overlay.parentNode) _.overlay.parentNode.removeChild(_.overlay);
             });
         }
 
-        Modal.prototype.open = function () {
-            // Build the modal
+        Modal.prototype.open = function() {
             buildOut.call(this);
-
-            // Init listeners
             initializeEvents.call(this);
-
             window.getComputedStyle(this.modal).height;
             this.modal.className = this.modal.className +
-                (this.modal.offsetHeight > window.innerHeight ?
-                    " modal-open modal-anchored" : " modal-open");
+            (this.modal.offsetHeight > window.innerHeight ?
+                " modal-open modal-anchored" : " modal-open");
             this.overlay.className = this.overlay.className + " modal-open";
         }
 
@@ -63,19 +70,19 @@
             //Model element
             this.modal = document.createElement("div");
             this.modal.className = "modal " + this.options.className;
-            this.modal.style.minWidth = this.options.minWidth + "px";
-            this.modal.style.maxWidth = this.options.maxWidth + "px";
+            // this.modal.style.minWidth = this.options.minWidth + "px";
+            // this.modal.style.maxWidth = this.options.maxWidth + "%";
 
-            if (this.options.closeButton) {
+            if (this.options.closeButton === true) {
                 this.closeButton = document.createElement("button");
                 this.closeButton.className = "modal-close close-button";
                 this.closeButton.innerHTML = "&times;";
                 this.modal.appendChild(this.closeButton);
             }
 
-            if (this.options.overlay) {
+            if (this.options.overlay === true) {
                 this.overlay = document.createElement("div");
-                this.overlay.className = "modal-overlay " + this.options.classname;
+                this.overlay.className = "modal-overlay " + this.options.className;
                 docFrag.appendChild(this.overlay);
             }
 
@@ -85,8 +92,6 @@
             this.modal.appendChild(contentHolder);
 
             docFrag.appendChild(this.modal);
-
-            console.log(docFrag);
 
             document.body.appendChild(docFrag);
         }
@@ -120,14 +125,26 @@
 
 
         // End function
-    }(jQuery));
+    }());
 
 $(function() {
     $(".call-modal").on("click", function () {
         var modal = new  Modal({
-           content:  document.getElementById(this.getAttribute('modal-target')).innerHTML,
-        });
+         content: document.getElementById(this.getAttribute('data-target')).innerHTML,
+         closeButton: this.hasAttribute('data-dismiss') ? true : false,
+     });
         modal.open();
     });
+
+
+    $('#toggle-menu, #close-menu').on('click', function() {
+       var toggleWidth = $("#menu").width() == 0 ? "auto" : "0";
+       $('#menu').css('width', toggleWidth);
+   });
     
+    $(window).on('resize', function(){
+      var win = $(this);
+      if (win.width() > 768)
+       $('#menu').removeAttr('style');
+    });
 });
